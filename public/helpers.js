@@ -1,10 +1,8 @@
-const createVenueHTML = (name, location, iconSource) => {
-    return `<h2>${name}</h2>
-    <img class="venueimage" src="${iconSource}"/>
+const createVenueHTML = (location) => {
+    return `<h2>${location.name}</h2>
     <h3>Address:</h3>
     <p>${location.address}</p>
-    <p>${location.city}</p>
-    <p>${location.country}</p>`;
+    <p>${$input.val()}</p>`;
 };
 
 const createWeatherHTML = (currentDay) => {
