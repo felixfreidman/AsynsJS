@@ -1,11 +1,11 @@
 // Foursquare API Info
-const clientId = "GUDFTK3GSUKR0UAI4ADEWL35T1WX40G0FNH0FAUX4QH3X5GC";
-const clientSecret = "RWYTIOQJHTBVQYSF1S1AGZIZWNJ5RREKN4BJIQPOW0S0FEHM";
-const apiKeyFS = "fsq3ezjD/MS2EfCH7npT8Roe5gRcsL/RMHexXlsYGeDq20A=";
+const clientId = API_KEYS.foursquare.clientId;
+const clientSecret = API_KEYS.foursquare.clientSecret;
+const apiKeyFS = API_KEYS.foursquare.API_KEY;
 const url = "https://api.foursquare.com/v3/places/search?";
 
 // OpenWeather Info
-const openWeatherKey = "88c5fefa9d8ed0c0b220a40126fb6342";
+const openWeatherKey = API_KEYS.openweather.API_KEY;
 const weatherUrl = "https://api.openweathermap.org/data/2.5/weather";
 
 // Page Elements
