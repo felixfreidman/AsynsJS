@@ -88,8 +88,8 @@ const renderVenues = (venues) => {
 
 const renderForecast = (day) => {
     // Add your code here:
-
-    let weatherContent = "";
+    createWeatherHTML(day);
+    let weatherContent = createWeatherHTML(day);
     $weatherDiv.append(weatherContent);
 };
 
@@ -101,7 +101,9 @@ const executeSearch = () => {
     getVenues().then((venues) => {
         return renderVenues(venues);
     });
-    getForecast();
+    getForecast().then((forecast) => {
+        return renderForecast(forecast);
+    });
     return false;
 };
 
